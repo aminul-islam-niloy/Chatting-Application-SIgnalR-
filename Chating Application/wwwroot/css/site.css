@@ -1,18 +1,58 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+#messageContainer {
+    height: 400px;
+    overflow-y: auto;
+}
+
+#messageList {
+    padding: 0;
+}
+
+    #messageList li {
+        list-style: none;
+    }
+
+.card {
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.card-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.card-light {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    #messageContainer {
+        height: 300px;
+    }
+}
+
+.badge-danger {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.5em;
 }
