@@ -2,7 +2,40 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="row p-3">
+
+        <div class="col-12 col-md-8 offset-md-2">
+            <div class="d-flex justify-content-end mb-30  " style="margin-bottom:30px">
+
+                <div class="position-relative">
+
+                    <span class="badge badge-danger" id="notificationCount" style="position: absolute; top: 0; right: 0; display: none;">0</span>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="UserInput" placeholder="You : " aria-label="User">
+            </div>
+
+            <div class="card">
+                <div class="card-body" id="messageContainer" style="height: 400px; overflow-y: scroll;">
+                    <ul class="list-unstyled" id="messageList"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8 offset-md-2">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="messageInput" placeholder="Enter your message" aria-label="Message">
+                <div class="input-group-append" style="margin-left:10px">
+                    <button class="btn btn-primary" id="sendButton" type="button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<audio id="notificationSound" src="~/notification.mp3"></audio>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
