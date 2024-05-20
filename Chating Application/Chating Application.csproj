@@ -7,4 +7,9 @@
     <RootNamespace>Chating_Application</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="6.0.0" />
+  </ItemGroup>
+
+	
 </Project>

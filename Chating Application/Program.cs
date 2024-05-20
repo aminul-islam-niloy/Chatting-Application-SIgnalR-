@@ -1,3 +1,5 @@
+using Chating_Application.Hubs;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,7 +16,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-//app.MapHub<ChatHub>("/chatHub");
+//@microsoft / signalr@latest to add package 
+app.MapHub<ChatHub>("/chatHub");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
