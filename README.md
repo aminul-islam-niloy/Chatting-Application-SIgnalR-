@@ -56,7 +56,7 @@ Notification sound issue not solved. if you can solve this issue, please do it.
 
 This project is licensed under the [MIT License](LICENSE).
 
-![Notification Image](https://github.com/aminul-islam-niloy/Notification-Service-for-ASP.NET-core-/blob/master/Notification%20Management/wwwroot/notification.png?raw=true)
+![Notification Image](https://github.com/aminul-islam-niloy/Chating-Application-SIgnalR-/blob/master/Chating%20Application/wwwroot/chatting.png?raw=true)
 
 ---
 
